@@ -1,13 +1,12 @@
 ﻿using System.Numerics;
 using System.Security.Cryptography;
 using System.Text;
-using Lab_RSA_SHA1;
 
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("=== Lab 1-2: RSA Algorithm & SHA-1 ===\n");
+        Console.WriteLine("=== Lab 1-2: RSA Algorithm (Advanced Level) ===\n");
 
         Console.WriteLine("[*] Generating 512-bit RSA keys (please wait a moment)...");
         CustomRSA rsa = new CustomRSA(512);
@@ -21,10 +20,9 @@ class Program
         {
             Console.WriteLine("======================================");
             Console.WriteLine("Please choose an action:");
-            Console.WriteLine("1. Encrypt a message (RSA)");
-            Console.WriteLine("2. Decrypt a HEX message (RSA)");
-            Console.WriteLine("3. Hash a message (SHA-1)");
-            Console.WriteLine("4. Exit");
+            Console.WriteLine("1. Encrypt a message");
+            Console.WriteLine("2. Decrypt a HEX message");
+            Console.WriteLine("3. Exit");
             Console.Write("> ");
             
             string choice = Console.ReadLine();
@@ -76,32 +74,12 @@ class Program
             }
             else if (choice == "3")
             {
-                // Виклик SHA-1 з вашого окремого файлу Hash.cs
-                Console.WriteLine("\n--- SHA-1 HASHING ---");
-                Console.WriteLine("Enter the text you want to hash:");
-                Console.Write("> ");
-                string textToHash = Console.ReadLine();
-
-                if (string.IsNullOrWhiteSpace(textToHash))
-                {
-                    Console.WriteLine("[!] Input cannot be empty.\n");
-                    continue;
-                }
-
-                // Використовуємо клас Hash
-                string hashResult = Hash.ToSHA1(textToHash);
-                
-                Console.WriteLine("\n[+] SHA-1 Hash Result:");
-                Console.WriteLine(hashResult + "\n");
-            }
-            else if (choice == "4")
-            {
                 Console.WriteLine("\nExiting program... Goodbye!");
                 break;
             }
             else
             {
-                Console.WriteLine("\n[-] Invalid choice. Please enter 1, 2, 3, or 4.\n");
+                Console.WriteLine("\n[-] Invalid choice. Please enter 1, 2, or 3.\n");
             }
         }
     }
