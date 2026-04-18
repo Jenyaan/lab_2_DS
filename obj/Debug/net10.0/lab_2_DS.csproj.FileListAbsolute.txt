@@ -12,3 +12,4 @@ C:\Users\jekan\Documents\Code\Learning\lab_2_DS\obj\Debug\net10.0\refint\lab_2_D
 C:\Users\jekan\Documents\Code\Learning\lab_2_DS\obj\Debug\net10.0\lab_2_DS.pdb
 C:\Users\jekan\Documents\Code\Learning\lab_2_DS\obj\Debug\net10.0\lab_2_DS.genruntimeconfig.cache
 C:\Users\jekan\Documents\Code\Learning\lab_2_DS\obj\Debug\net10.0\ref\lab_2_DS.dll
+C:\Users\jekan\Documents\Code\Learning\lab_2_DS\obj\Debug\net10.0\lab_2_DS.sourcelink.json
